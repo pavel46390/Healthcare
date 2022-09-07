@@ -26,6 +26,10 @@
 
   img {
     width: 100vh;
+    transition: 0.5s;
+    &:hover{
+      transform: scale(1.01);
+    }
   }
 
   h2 {
@@ -219,7 +223,7 @@
   height: 15px;
   border-radius: 50%;
   display: inline-block;
-  background: #40A3F8;
+  background-color: #40A3F8;
   margin: 0 5px;
 }
 
@@ -233,7 +237,8 @@
   background: red;
 }
 .block-width{
-  max-width: 300px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 
