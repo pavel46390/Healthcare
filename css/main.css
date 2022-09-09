@@ -97,11 +97,6 @@ ol[class] {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 .container {
   max-width: 1170px;
   width: 100%;
@@ -127,6 +122,11 @@ header h2 a, header .section_main .text_color a, .section_main header .text_colo
 }
 header h2 a:hover, header .section_main .text_color a:hover, .section_main header .text_color a:hover {
   text-decoration: none;
+}
+header .d_flex_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -188,18 +188,40 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.d_flex_main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .section_main {
   background: linear-gradient(180deg, rgba(177, 222, 255, 0.3), rgba(255, 166, 237, 0) 100%);
   padding: 129px 0 0 0;
 }
+.section_main .main_block {
+  max-width: 570px;
+}
 .section_main img {
+  object-fit: cover;
   width: 100vh;
+  margin-left: 50px;
+}
+@media screen and (max-width: 1070px) {
+  .section_main img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section_main img {
+    width: 100%;
+  }
+}
+.section_main .d_flex_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1070px) {
+  .section_main .d_flex_main {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .section_main h2, .section_main .text_color {
   font-family: "Roboto";
@@ -259,6 +281,12 @@ nav ul li a:hover {
   background: rgba(245, 246, 250, 0.52);
   border: transparent;
   margin-right: 31px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3D3D3F;
 }
 .form .select option {
   content: url("../images/find.svg");
@@ -275,7 +303,7 @@ nav ul li a:hover {
   top: 0;
   bottom: 0;
   right: 90%;
-  margin: auto 0;
+  margin: auto 3px auto 0;
   width: 14px;
   height: 16px;
   background: url("../images/location.svg");
@@ -396,6 +424,7 @@ nav ul li a:hover {
 .block_man {
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
 @media screen and (max-width: 1000px) {
   .block_man {
@@ -408,6 +437,12 @@ nav ul li a:hover {
 .block_man img {
   width: 583px;
   height: 524px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 1000px) {
+  .block_man img {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 620px) {
   .block_man img {
@@ -424,7 +459,6 @@ nav ul li a:hover {
   letter-spacing: 0.02em;
   color: #3D3D3F;
   text-align: left;
-  margin-top: 100px;
 }
 .block_man p {
   font-family: "Roboto";
@@ -661,7 +695,9 @@ nav ul li a:hover {
   border-radius: 10px;
   margin-bottom: 18px;
   width: 241px;
-  min-height: 249px;
+  height: 249px;
+  object-fit: cover;
+  object-position: top;
 }
 .section_doctors .btn_explore {
   display: flex;

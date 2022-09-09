@@ -27,6 +27,11 @@ header {
 
     }
   }
+  .d_flex_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 nav {
