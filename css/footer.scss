@@ -1,127 +1,127 @@
-footer {
-  background-color: white;
-  padding: 34px 0 24px 0;
-
-  h2 {
-    a {
-      font-family: 'Rubik';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 47px;
-      letter-spacing: 1px;
-      color: #40A3F8;
-      margin-bottom: 12px;
-      transition: 0.3s;
-      &:hover{
-        text-decoration: none;
-      }
-    }
-
-  }
-
-  p {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 180%;
-    color: #646464;
-    margin-bottom: 16px;
-  }
-
-  ul {
-    list-style: none;
-    margin-left: 114px;
-  }
-
-  li {
-    margin-bottom: 24px;
-
-    &:first-of-type a {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 16px;
-      color: #323232;
-
-    }
-  }
-}
-
-a {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #646464;
-}
-
-.d_flex_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.left-position {
-  text-align: left;
-}
-
-.footer_subscribe {
-  margin-left: 152px;
-
-  p {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 180%;
-    color: #646464;
-    margin-bottom: 15px;
-
-    &:first-of-type {
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 16px;
-      color: #323232;
-      margin-bottom: 19px;
-    }
-  }
-
-  form {
-      max-width: 292px;
-
-
-    input::placeholder {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
-      color: rgba(117, 117, 117, 0.65);
-    }
-
-    button {
-      background: #40A3F8;
-      border: 1.1px solid #E1E2E4;
-      border-radius: 5px;
-      width: 292px;
-      height: 40px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      color: #FFFFFF;
-      margin-top: 12px;
-
-    }
-
-  }
-}
-
+//footer {
+//  background-color: white;
+//  padding: 34px 0 24px 0;
+//
+//  h2 {
+//    a {
+//      font-family: 'Rubik';
+//      font-style: normal;
+//      font-weight: 500;
+//      font-size: 32px;
+//      line-height: 47px;
+//      letter-spacing: 1px;
+//      color: #40A3F8;
+//      margin-bottom: 12px;
+//      transition: 0.3s;
+//      &:hover{
+//        text-decoration: none;
+//      }
+//    }
+//
+//  }
+//
+//  p {
+//    font-family: 'DM Sans';
+//    font-style: normal;
+//    font-weight: 400;
+//    font-size: 14px;
+//    line-height: 180%;
+//    color: #646464;
+//    margin-bottom: 16px;
+//  }
+//
+//  ul {
+//    list-style: none;
+//    margin-left: 114px;
+//  }
+//
+//  li {
+//    margin-bottom: 24px;
+//
+//    &:first-of-type a {
+//      font-family: 'Roboto';
+//      font-style: normal;
+//      font-weight: 700;
+//      font-size: 16px;
+//      line-height: 16px;
+//      color: #323232;
+//
+//    }
+//  }
+//}
+//
+//a {
+//  font-family: 'Roboto';
+//  font-style: normal;
+//  font-weight: 400;
+//  font-size: 14px;
+//  line-height: 14px;
+//  color: #646464;
+//}
+//
+//.d_flex_footer {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: flex-start;
+//}
+//
+//.left-position {
+//  text-align: left;
+//}
+//
+//.footer_subscribe {
+//  margin-left: 152px;
+//
+//  p {
+//    font-family: 'DM Sans';
+//    font-style: normal;
+//    font-weight: 400;
+//    font-size: 14px;
+//    line-height: 180%;
+//    color: #646464;
+//    margin-bottom: 15px;
+//
+//    &:first-of-type {
+//      font-family: 'DM Sans';
+//      font-style: normal;
+//      font-weight: 700;
+//      font-size: 16px;
+//      line-height: 16px;
+//      color: #323232;
+//      margin-bottom: 19px;
+//    }
+//  }
+//
+//  form {
+//      max-width: 292px;
+//
+//
+//    input::placeholder {
+//      font-family: 'Roboto';
+//      font-style: normal;
+//      font-weight: 400;
+//      font-size: 14px;
+//      line-height: 16px;
+//      color: rgba(117, 117, 117, 0.65);
+//    }
+//
+//    button {
+//      background: #40A3F8;
+//      border: 1.1px solid #E1E2E4;
+//      border-radius: 5px;
+//      width: 292px;
+//      height: 40px;
+//      font-family: 'Roboto';
+//      font-style: normal;
+//      font-weight: 500;
+//      font-size: 14px;
+//      line-height: 16px;
+//      letter-spacing: 0.02em;
+//      color: #FFFFFF;
+//      margin-top: 12px;
+//
+//    }
+//
+//  }
+//}
+//
