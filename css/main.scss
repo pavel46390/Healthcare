@@ -53,11 +53,11 @@ ol[class] {
     @content
   }
 }
-body{
-  background-image: url("../images/Desktop.png");
-  background-repeat: repeat;
-  background-size: cover;
-}
+//body{
+//  background-image: url("../images/Desktop.png");
+//  background-repeat: repeat;
+//  background-size: cover;
+//}
 
 .section_main {
   //background: linear-gradient(180deg, rgba(177, 222, 255, 0.3), rgba(255, 166, 237, 0) 100%);
@@ -644,8 +644,12 @@ body{
 
   .doctor_item {
     padding: 10px 13px 30px 13px;
-    //background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #ad8a8a -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
+    background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
     border-radius: 10px;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.1);
+    }
     @include max-screen(1150px) {
       margin: 0 15px 15px 15px;
     }
@@ -695,6 +699,7 @@ body{
       height: 249px;
       object-fit: cover;
       object-position: top;
+      display: block;
     }
 
   }
@@ -792,7 +797,13 @@ body{
     width: 156px !important;
     height: 46px !important;
     border-radius: 5px;
-    margin-right: 13px;
+
+  }
+  a{
+    text-decoration: none;
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
 
   }
 }

@@ -187,12 +187,6 @@ nav ul li a:hover {
   align-items: center;
 }
 
-body {
-  background-image: url("../images/Desktop.png");
-  background-repeat: repeat;
-  background-size: cover;
-}
-
 .section_main {
   padding: 129px 0 0 0;
 }
@@ -711,7 +705,12 @@ body {
 }
 .section_doctors .doctor_item {
   padding: 10px 13px 30px 13px;
+  background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
   border-radius: 10px;
+  transition: 0.3s;
+}
+.section_doctors .doctor_item:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 1150px) {
   .section_doctors .doctor_item {
@@ -754,6 +753,7 @@ body {
   height: 249px;
   object-fit: cover;
   object-position: top;
+  display: block;
 }
 .section_doctors .btn_explore {
   display: flex;
@@ -845,6 +845,11 @@ body {
   width: 156px !important;
   height: 46px !important;
   border-radius: 5px;
+}
+.section_mobile_app a {
+  text-decoration: none;
+}
+.section_mobile_app a:not(:last-child) {
   margin-right: 13px;
 }
 
