@@ -696,20 +696,13 @@ nav ul li a:hover {
 }
 .section_doctors .doctors_column {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1150px) {
   .section_doctors .doctors_column {
-    flex: 1 0 50%;
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 975px) {
-  .section_doctors .doctors_column {
-    flex: 1 0 50%;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 .section_doctors .doctor_item {
@@ -717,21 +710,9 @@ nav ul li a:hover {
   background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #ad8a8a -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
   border-radius: 10px;
 }
-.section_doctors .doctor_item:not(:last-child) {
-  margin-right: 24px;
-}
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1150px) {
   .section_doctors .doctor_item {
-    margin-bottom: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-}
-@media screen and (max-width: 660px) {
-  .section_doctors .doctor_item {
-    margin-bottom: 24px;
-    margin-left: 0;
-    margin-right: 15px;
+    margin: 0 15px 15px 15px;
   }
 }
 .section_doctors .doctor_item h4 {

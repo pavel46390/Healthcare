@@ -626,38 +626,21 @@ ol[class] {
 
   .doctors_column {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    @include max-screen(1170px) {
-      flex: 1 0 50%;
-      justify-content: space-between;
+    @include max-screen(1150px) {
+      justify-content: space-around;
     }
-    @include max-screen(975px) {
-      flex: 1 0 50%;
-      justify-content: center;
-    }
+
   }
 
   .doctor_item {
     padding: 10px 13px 30px 13px;
     background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #ad8a8a -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
     border-radius: 10px;
-
-    &:not(:last-child) {
-      margin-right: 24px;
-
-    }
-
-    @include max-screen(1170px) {
-      margin-bottom: 24px;
-      margin-left: 24px;
-      margin-right: 24px;
-    }
-    @include max-screen(660px) {
-      margin-bottom: 24px;
-      margin-left: 0;
-      margin-right: 15px;
+    @include max-screen(1150px) {
+      margin: 0 15px 15px 15px;
     }
 
 
