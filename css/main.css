@@ -107,7 +107,6 @@ ol[class] {
 
 header {
   padding: 14px 0;
-  background: rgba(177, 222, 255, 0.3);
 }
 header h2 a, header .section_main .text_color a, .section_main header .text_color a {
   font-family: "Rubik";
@@ -188,8 +187,13 @@ nav ul li a:hover {
   align-items: center;
 }
 
+body {
+  background-image: url("../images/Desktop.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
 .section_main {
-  background: linear-gradient(180deg, rgba(177, 222, 255, 0.3), rgba(255, 166, 237, 0) 100%);
   padding: 129px 0 0 0;
 }
 @media screen and (max-width: 1024px) {
@@ -408,7 +412,6 @@ nav ul li a:hover {
 
 /*..................................................................................*/
 .section_solution {
-  background: linear-gradient(180deg, rgba(177, 222, 255, 0.5) 0%, rgba(255, 166, 237, 0) 100%);
   padding: 75px 0 200px 0;
 }
 .section_solution h3 {
@@ -497,6 +500,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  margin-top: 80px;
 }
 @media screen and (max-width: 1000px) {
   .block_man {
@@ -507,9 +511,9 @@ nav ul li a:hover {
   }
 }
 .block_man img {
+  object-fit: cover;
   width: 583px;
   height: 524px;
-  margin-top: 80px;
 }
 @media screen and (max-width: 1000px) {
   .block_man img {
@@ -707,7 +711,6 @@ nav ul li a:hover {
 }
 .section_doctors .doctor_item {
   padding: 10px 13px 30px 13px;
-  background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #ad8a8a -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
   border-radius: 10px;
 }
 @media screen and (max-width: 1150px) {
@@ -783,9 +786,13 @@ nav ul li a:hover {
 }
 
 /*..................................................................................*/
+.section_mobile_app {
+  padding: 120px 0 120px 0;
+}
 .section_mobile_app .block_mobile_app {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 1000px) {
   .section_mobile_app .block_mobile_app {
@@ -796,13 +803,13 @@ nav ul li a:hover {
   }
 }
 .section_mobile_app .block_mobile_app img {
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  width: 583px;
+  height: 524px;
 }
-@media screen and (max-width: 1142px) {
+@media screen and (max-width: 1000px) {
   .section_mobile_app .block_mobile_app img {
-    width: 700px;
-    height: 650px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 620px) {
@@ -811,26 +818,34 @@ nav ul li a:hover {
     height: 100%;
   }
 }
-.section_mobile_app .block_mobile_app h3 {
+.section_mobile_app .block_mobile_app .block_mobile_app_text-width {
+  max-width: 500px;
+}
+.section_mobile_app h3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 60px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
-  text-align: left;
-  margin-top: 100px;
+  margin-bottom: 30px;
 }
-.section_mobile_app .block_mobile_app p {
+.section_mobile_app p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  text-align: left;
   color: rgba(61, 61, 63, 0.7);
+  margin-bottom: 30px;
+}
+.section_mobile_app .store_icon {
+  width: 156px !important;
+  height: 46px !important;
+  border-radius: 5px;
+  margin-right: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */
