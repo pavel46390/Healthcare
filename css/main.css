@@ -192,8 +192,10 @@ nav ul li a:hover {
   background: linear-gradient(180deg, rgba(177, 222, 255, 0.3), rgba(255, 166, 237, 0) 100%);
   padding: 129px 0 0 0;
 }
-.section_main .main_block {
-  max-width: 570px;
+@media screen and (max-width: 1024px) {
+  .section_main .main_block_width {
+    margin: 0 auto;
+  }
 }
 .section_main img {
   object-fit: cover;
@@ -202,13 +204,14 @@ nav ul li a:hover {
 }
 @media screen and (max-width: 1070px) {
   .section_main img {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto 0 auto;
   }
 }
 @media screen and (max-width: 460px) {
   .section_main img {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .section_main .d_flex_main {
@@ -219,8 +222,6 @@ nav ul li a:hover {
 @media screen and (max-width: 1070px) {
   .section_main .d_flex_main {
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .section_main h2, .section_main .text_color {
@@ -231,6 +232,7 @@ nav ul li a:hover {
   line-height: 70px;
   color: #3E3E3E;
   margin-bottom: 31px;
+  text-align: left;
 }
 .section_main p {
   font-family: "Roboto";
@@ -240,7 +242,8 @@ nav ul li a:hover {
   line-height: 30px;
   color: rgba(117, 117, 117, 0.46);
   margin-bottom: 50px;
-  max-width: 500px;
+  max-width: 460px;
+  text-align: left;
 }
 .section_main .text_color {
   color: #40A3F8;
@@ -250,12 +253,25 @@ nav ul li a:hover {
   padding: 13px;
   display: flex;
   justify-content: space-between;
-  max-width: 566px;
+  width: 100%;
   align-items: center;
   background: #FFFFFF;
   box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
   border-radius: 8px;
   border: transparent;
+}
+@media screen and (max-width: 595px) {
+  .form {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 427px) {
+  .form {
+    justify-content: stretch;
+  }
 }
 .form .search {
   background: rgba(245, 246, 250, 0.52);
@@ -270,6 +286,22 @@ nav ul li a:hover {
   line-height: 24px;
   color: #3D3D3F;
   margin-right: 19px;
+}
+@media screen and (max-width: 595px) {
+  .form .search {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 472px) {
+  .form .search {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 427px) {
+  .form .search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .form .select {
   width: 203px;
@@ -287,6 +319,17 @@ nav ul li a:hover {
   font-size: 14px;
   line-height: 24px;
   color: #3D3D3F;
+}
+@media screen and (max-width: 595px) {
+  .form .select {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 472px) {
+  .form .select {
+    margin-right: 0;
+  }
 }
 .form .select option {
   content: url("../images/find.svg");
@@ -309,6 +352,11 @@ nav ul li a:hover {
   background: url("../images/location.svg");
   background-size: cover;
 }
+@media screen and (max-width: 595px) {
+  .form .castom-input:before {
+    right: 88%;
+  }
+}
 .form .castom-input input {
   width: 100%;
   height: 25px;
@@ -320,11 +368,35 @@ nav ul li a:hover {
   border-radius: 8px;
   position: relative;
 }
+@media screen and (max-width: 595px) {
+  .form button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .form button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
 .form button:before {
   content: url("../images/find.svg");
   position: absolute;
-  top: 11px;
-  right: 17px;
+  top: 12px;
+  right: 18px;
+}
+@media screen and (max-width: 595px) {
+  .form button:before {
+    top: 20%;
+    right: 44%;
+  }
+}
+@media screen and (max-width: 513px) {
+  .form button:before {
+    top: 20%;
+    right: 44%;
+  }
 }
 .form input::placeholder {
   font-family: "Poppins";
@@ -624,7 +696,7 @@ nav ul li a:hover {
 }
 .section_doctors .doctors_column {
   display: flex;
-  flex: 1 0 25%;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }

@@ -58,19 +58,24 @@ ol[class] {
 .section_main {
   background: linear-gradient(180deg, rgba(177, 222, 255, 0.3), rgba(255, 166, 237, 0) 100%);
   padding: 129px 0 0 0;
-.main_block{
-  max-width: 570px;
-}
+
+  .main_block_width {
+    @include max-screen(1024px) {
+      margin: 0 auto;
+    }
+  }
+
   img {
     object-fit: cover;
     width: 100vh;
     margin-left: 50px;
     @include max-screen(1070px) {
-      margin-left: auto;
-      margin-right: auto;
+      margin: 20px auto 0 auto;
     }
     @include max-screen(460px) {
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -80,8 +85,6 @@ ol[class] {
     align-items: center;
     @include max-screen(1070px) {
       flex-wrap: wrap;
-      margin-left: auto;
-      margin-right: auto;
     }
 
   }
@@ -94,6 +97,8 @@ ol[class] {
     line-height: 70px;
     color: #3E3E3E;
     margin-bottom: 31px;
+    text-align: left;
+
 
   }
 
@@ -105,7 +110,8 @@ ol[class] {
     line-height: 30px;
     color: rgba(117, 117, 117, 0.46);
     margin-bottom: 50px;
-    max-width: 500px;
+    max-width: 460px;
+    text-align: left;
 
 
   }
@@ -122,12 +128,25 @@ ol[class] {
   padding: 13px;
   display: flex;
   justify-content: space-between;
-  max-width: 566px;
+  width: 100%;
   align-items: center;
   background: #FFFFFF;
   box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
   border-radius: 8px;
   border: transparent;
+  @include max-screen(595px) {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+  }
+  @include max-screen(427px) {
+    justify-content: stretch;
+
+
+  }
 
   .search {
     background: rgba(245, 246, 250, 0.52);
@@ -142,6 +161,21 @@ ol[class] {
     line-height: 24px;
     color: #3D3D3F;
     margin-right: 19px;
+    @include max-screen(595px) {
+      width: 50%;
+
+    }
+    @include max-screen(472px) {
+      margin-right: 0;
+
+
+    }
+    @include max-screen(427px) {
+      width: 100%;
+      margin-bottom: 10px;
+
+
+    }
 
   }
 
@@ -161,12 +195,21 @@ ol[class] {
     font-size: 14px;
     line-height: 24px;
     color: #3D3D3F;
+    @include max-screen(595px) {
+      width: 100%;
+      margin-right: 0;
+
+    }
+    @include max-screen(472px) {
+      margin-right: 0;
+    }
 
     option {
       content: url("../images/find.svg");
       position: absolute;
       top: 11px;
       right: 17px;
+
 
     }
   }
@@ -185,12 +228,19 @@ ol[class] {
       height: 16px;
       background: url("../images/location.svg");
       background-size: cover;
+      @include max-screen(595px) {
+        right: 88%;
+
+
+      }
+
 
     }
 
     input {
       width: 100%;
       height: 25px;
+
     }
   }
 
@@ -200,13 +250,33 @@ ol[class] {
     background: #40A3F8;
     border-radius: 8px;
     position: relative;
+    @include max-screen(595px) {
+      margin-top: 10px;
+      width: 100%;
+    }
+    @include max-screen(512px) {
+      margin-top: 10px;
+      width: 100%;
+    }
 
 
     &:before {
       content: url("../images/find.svg");
       position: absolute;
-      top: 11px;
-      right: 17px;
+      top: 12px;
+      right: 18px;
+      @include max-screen(595px) {
+        top: 20%;
+        right: 44%;
+
+
+      }
+      @include max-screen(513px) {
+        top: 20%;
+        right: 44%;
+
+
+      }
 
     }
 
@@ -343,7 +413,7 @@ ol[class] {
     width: 583px;
     height: 524px;
     margin-top: 80px;
-    @include max-screen(1000px){
+    @include max-screen(1000px) {
       margin-bottom: 30px;
     }
     @include max-screen(620px) {
@@ -556,7 +626,7 @@ ol[class] {
 
   .doctors_column {
     display: flex;
-    flex: 1 0 25%;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     @include max-screen(1170px) {
