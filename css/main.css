@@ -647,18 +647,15 @@ nav ul li a:hover {
   margin-right: 32px;
   margin-left: 32px;
   text-align: center;
-  background: #eceaea;
+  background-color: #eceaea;
   border-radius: 10px;
+  height: inherit;
   padding: 61px 62px 31px 63px;
-  height: 100%;
 }
 @media screen and (max-width: 800px) {
   .service .service_item {
     max-width: 320px;
   }
-}
-.service .service_item:hover {
-  background: #eceaea;
 }
 
 /*..................................................................................*/
@@ -851,6 +848,97 @@ nav ul li a:hover {
 }
 .section_mobile_app a:not(:last-child) {
   margin-right: 13px;
+}
+
+/*.............................................................................................*/
+.section_feedback {
+  padding: 120px 0 120px 0;
+  background-color: black;
+}
+.section_feedback h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  text-align: center;
+}
+.section_feedback .feedback_column {
+  display: flex;
+  justify-content: space-between;
+}
+.section_feedback .feedback_item {
+  margin-top: 90px;
+  padding: 22px 17px 32px 48px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  max-width: 370px;
+}
+.section_feedback .feedback_item .img_absolute_feedback {
+  position: absolute;
+  top: -17px;
+  left: 80%;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.section_feedback .feedback_item h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 55px;
+  color: #3D3D3F;
+  text-align: left;
+}
+.section_feedback .feedback_item p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #454D5D;
+  text-align: left;
+}
+.section_feedback .feedback_item p:first-of-type {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+.section_feedback .owl-item {
+  width: 370px;
+  min-height: 347px;
+  height: 375px;
+}
+.section_feedback .d_flex_feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_feedback .feedback_photo {
+  display: flex;
+  justify-content: center;
+}
+.section_feedback .feedback_photo img {
+  border-radius: 100%;
+  display: block;
+  width: 63px !important;
+  height: 63px !important;
+}
+.section_feedback .d_flex_feedback_column {
+  display: flex;
+  justify-content: space-between;
+}
+.section_feedback .owl-carousel .owl-item img {
+  width: 25%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
