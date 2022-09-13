@@ -92,11 +92,6 @@ body {
   line-height: 1;
 }
 
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
 .container {
   max-width: 1170px;
   width: 100%;
@@ -107,6 +102,7 @@ ol[class] {
 
 header {
   padding: 14px 0;
+  background: rgba(177, 222, 255, 0.3);
 }
 header h2 a, header .section_main .text_color a, .section_main header .text_color a {
   font-family: "Rubik";
@@ -180,14 +176,8 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-.d_flex {
-  display: flex;
-  flex: 1 0 33%;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .section_main {
+  background: linear-gradient(180deg, rgba(177, 222, 255, 0.3), rgba(255, 166, 237, 0) 100%);
   padding: 129px 0 0 0;
 }
 @media screen and (max-width: 1024px) {
@@ -406,6 +396,7 @@ nav ul li a:hover {
 
 /*..................................................................................*/
 .section_solution {
+  background: rgba(177, 222, 255, 0.3);
   padding: 75px 0 200px 0;
 }
 .section_solution h3 {
@@ -436,10 +427,6 @@ nav ul li a:hover {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-.section_solution .solution_column {
-  display: flex;
-  flex: 1 0 33.333%;
-}
 .section_solution .solution_item {
   margin: 0 30px;
   text-align: center;
@@ -449,10 +436,25 @@ nav ul li a:hover {
     max-width: 320px;
   }
 }
+@media screen and (max-width: 790px) {
+  .section_solution .solution_item {
+    margin: 0 auto;
+  }
+}
 .section_solution .image {
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
+}
+.section_solution .d_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .section_solution .d_flex {
+    flex-wrap: wrap;
+  }
 }
 
 /*..................................................................................*/
@@ -592,6 +594,9 @@ nav ul li a:hover {
 }
 
 /*..................................................................................*/
+.service {
+  background: rgba(177, 222, 255, 0.3);
+}
 .service h3 {
   font-family: "Roboto";
   font-style: normal;
@@ -647,9 +652,9 @@ nav ul li a:hover {
   margin-right: 32px;
   margin-left: 32px;
   text-align: center;
-  background-color: #eceaea;
+  background-color: #F9F9F9;
   border-radius: 10px;
-  height: inherit;
+  height: 380px !important;
   padding: 61px 62px 31px 63px;
 }
 @media screen and (max-width: 800px) {
@@ -657,10 +662,42 @@ nav ul li a:hover {
     max-width: 320px;
   }
 }
+.service .owl-item .service_item {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.2s ease;
+}
+.service .owl-item.center .service_item {
+  cursor: auto;
+  margin: 0;
+}
+.service .owl-item.center .service_item {
+  cursor: auto;
+  margin: 0;
+  background-color: white;
+  position: relative;
+}
+.service .owl-item.active.center > div:after {
+  content: "#";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.service .owl-item > div:after {
+  color: transparent;
+  padding: 5px 190px;
+  height: 18px;
+  background: #40A3F8;
+  opacity: 0.5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
 /*..................................................................................*/
 .section_doctors {
   padding: 120px 0 0 0;
+  background: rgba(177, 222, 255, 0.3);
 }
 .section_doctors h3 {
   font-family: "Roboto";
@@ -688,6 +725,7 @@ nav ul li a:hover {
 }
 .section_doctors .line {
   margin: 0 auto;
+  display: block;
 }
 .section_doctors .doctors_column {
   display: flex;
@@ -785,6 +823,7 @@ nav ul li a:hover {
 /*..................................................................................*/
 .section_mobile_app {
   padding: 120px 0 120px 0;
+  background: rgba(177, 222, 255, 0.3);
 }
 .section_mobile_app .block_mobile_app {
   display: flex;
@@ -853,7 +892,7 @@ nav ul li a:hover {
 /*.............................................................................................*/
 .section_feedback {
   padding: 120px 0 120px 0;
-  background-color: #dcdcdc;
+  background: rgba(177, 222, 255, 0.3);
 }
 .section_feedback .owl-dots {
   display: none;
@@ -862,7 +901,7 @@ nav ul li a:hover {
   .section_feedback .owl-dots {
     display: inherit;
     position: absolute;
-    top: 100%;
+    top: 75%;
     right: 42%;
     left: 42%;
   }
@@ -877,6 +916,12 @@ nav ul li a:hover {
     display: inherit;
     right: 30%;
     left: 30%;
+    top: 70%;
+  }
+}
+@media screen and (max-width: 490px) and (max-width: 410px) {
+  .section_feedback .owl-dots {
+    top: 80%;
   }
 }
 .section_feedback h3 {
@@ -964,7 +1009,7 @@ nav ul li a:hover {
 }
 .section_feedback .owl-nav .owl-prev {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 102%;
   transition: 0.3s;
 }
@@ -1006,7 +1051,7 @@ nav ul li a:hover {
 }
 .section_feedback .owl-nav .owl-next {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: -5%;
   transition: 0.3s;
 }
@@ -1045,6 +1090,85 @@ nav ul li a:hover {
 .section_feedback .owl-nav .owl-next:hover {
   color: white;
   background-color: #40A3F8;
+}
+.section_feedback .owl-carousel .owl-stage {
+  margin-bottom: 200px;
+}
+
+.section_book {
+  padding: 82px 0 92px 0;
+  background-image: url("../images/Group 1879background_book.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  background-position: center;
+  position: relative;
+}
+.section_book h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-align: left;
+  margin-bottom: 21px;
+}
+.section_book a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: inline-flex;
+  font-feature-settings: "cpsp" on;
+  color: #40A3F8;
+  padding: 16px 17px 15px 18px;
+  background-color: white;
+  text-decoration: none;
+  text-align: left;
+  border-radius: 5px;
+}
+.section_book img {
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1090px) {
+  .section_book img {
+    right: -12%;
+  }
+}
+@media screen and (max-width: 885px) {
+  .section_book img {
+    display: none;
+  }
+}
+.section_book .book_content {
+  margin-left: 118px;
+  max-width: 402px;
+}
+@media screen and (max-width: 990px) {
+  .section_book .book_content {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .section_book .book_content {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .section_book .book_content {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 470px) {
+  .section_book .book_content {
+    margin: 0 10px 0 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
