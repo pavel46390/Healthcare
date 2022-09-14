@@ -574,13 +574,12 @@ body {
   }
 
   .service_item {
-    margin-right: 32px;
-    margin-left: 32px;
     text-align: center;
     background-color: #F9F9F9;
     border-radius: 10px;
-    height: 380px!important;
-    padding: 61px 62px 31px 63px;
+    min-height: 316px;
+    padding: 59px 62px 31px 63px;
+    max-width: 349px;
 
     @include max-screen(800px) {
       max-width: 320px;
@@ -591,7 +590,7 @@ body {
   .owl-item .service_item {
     cursor: pointer;
     margin: 6% 8%;
-    transition: margin 0.2s ease;
+    transition: margin 0.4s ease;
   }
   .owl-item.center .service_item {
     cursor: auto;
@@ -617,8 +616,8 @@ body {
   }
   .owl-item > div:after {
     color: transparent;
-    padding: 5px 190px;
     height: 18px;
+    max-width: 500px;
     background: #40A3F8;
     opacity: 0.5;
     border-bottom-left-radius: 10px;
@@ -907,6 +906,7 @@ body {
     border-radius: 10px;
     max-width: 370px;
     margin: 90px 15px 0 15px;
+    min-height: 400px!important;
 
 
     .img_absolute_feedback {

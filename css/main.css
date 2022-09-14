@@ -649,13 +649,12 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 .service .service_item {
-  margin-right: 32px;
-  margin-left: 32px;
   text-align: center;
   background-color: #F9F9F9;
   border-radius: 10px;
-  height: 380px !important;
-  padding: 61px 62px 31px 63px;
+  min-height: 316px;
+  padding: 59px 62px 31px 63px;
+  max-width: 349px;
 }
 @media screen and (max-width: 800px) {
   .service .service_item {
@@ -665,7 +664,7 @@ nav ul li a:hover {
 .service .owl-item .service_item {
   cursor: pointer;
   margin: 6% 8%;
-  transition: margin 0.2s ease;
+  transition: margin 0.4s ease;
 }
 .service .owl-item.center .service_item {
   cursor: auto;
@@ -686,8 +685,8 @@ nav ul li a:hover {
 }
 .service .owl-item > div:after {
   color: transparent;
-  padding: 5px 190px;
   height: 18px;
+  max-width: 500px;
   background: #40A3F8;
   opacity: 0.5;
   border-bottom-left-radius: 10px;
@@ -945,6 +944,7 @@ nav ul li a:hover {
   border-radius: 10px;
   max-width: 370px;
   margin: 90px 15px 0 15px;
+  min-height: 400px !important;
 }
 .section_feedback .feedback_item .img_absolute_feedback {
   position: absolute;
