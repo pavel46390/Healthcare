@@ -5,6 +5,9 @@ $(document).ready(function(){
         margin:0,
         center:true,
         nav:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplaySpeed: 1000,
         navText: [ '', ' ' ],
 
         responsive:{
