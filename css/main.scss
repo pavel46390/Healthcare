@@ -856,29 +856,12 @@ body {
   padding: 120px 0 120px 0;
   background: rgba(177, 222, 255, 0.3);
 
-
-  .owl-dots {
-    display: none;
-    @include max-screen(1275px) {
-      display: inherit;
-      position: absolute;
-      top: 75%;
-      right: 42%;
-      left: 42%;
-    }
-    @include max-screen(800px) {
-      display: none;
-    }
-    @include max-screen(490px) {
-      display: inherit;
-      right: 30%;
-      left: 30%;
-      top: 70%;
-      @include max-screen(410px){
-        top: 80%
-      }
-    }
-  }
+.owl-dots{
+  margin-bottom: 190px;
+  margin-top: -191px;
+  position: relative;
+  z-index: 1;
+}
 
 
   h3 {
@@ -906,7 +889,7 @@ body {
     border-radius: 10px;
     max-width: 370px;
     margin: 90px 15px 0 15px;
-    min-height: 400px!important;
+    min-height: 425px!important;
 
 
     .img_absolute_feedback {
@@ -970,10 +953,6 @@ body {
     }
   }
 
-  .d_flex_feedback_column {
-    display: flex;
-    justify-content: space-between;
-  }
 
   .owl-carousel .owl-item img {
     width: 25%;
@@ -994,10 +973,12 @@ body {
       right: 102%;
       transition: 0.3s;
       @include max-screen(1275px) {
+        left: -30px;
+      }
+      @include max-screen(1200px){
         display: none;
       }
       @include max-screen(800px) {
-        display: inherit;
         left: 80px;
       }
       @include max-screen(650px) {
@@ -1034,10 +1015,12 @@ body {
       right: -5%;
       transition: 0.3s;
       @include max-screen(1275px) {
+        right: -30px;
+      }
+      @include max-screen(1200px){
         display: none;
       }
       @include max-screen(800px) {
-        display: inherit;
         right: 80px;
       }
       @include max-screen(650px) {
