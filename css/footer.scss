@@ -245,52 +245,5 @@ footer {
 
 }
 
-#button {
-  display: inline-block;
-  background-color: #40A3F8;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  border-radius: 100%;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s,
-  opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  @include max-screen(950px){
-    width: 40px;
-    height: 40px;
-  }
-}
-#button::after {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f077";
-  font-size: 30px;
-  color: #fff;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  @include max-screen(950px) {
-    top: 20%;
-    left: 20%;
-    font-size: 25px;
 
-  }
-
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #0069d9;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
 
