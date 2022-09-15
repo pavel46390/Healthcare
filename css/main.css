@@ -54,6 +54,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu.eot");
+  src: url("../fonts/Ubuntu.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu.woff2") format("woff2"), url("../fonts/Ubuntu.woff") format("woff"), url("../fonts/Ubuntu.ttf") format("truetype"), url("../fonts/Ubuntu.svg#Ubuntu") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 *::before,
 *::after {
@@ -862,6 +870,10 @@ footer ul li .footer_links:hover {
   border-radius: 50%;
   background-color: #DBE8EE;
   margin: 0 5px;
+  transition: 0.5s;
+}
+.owl-dots button.owl-dot:hover {
+  background-color: #40A3F8;
 }
 
 .owl-dots button.owl-dot.active {
@@ -1269,6 +1281,7 @@ footer ul li .footer_links:hover {
   border-radius: 10px;
   max-width: 370px;
   margin: 90px 15px 0 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   min-height: 425px !important;
 }
 .section_feedback .feedback_item a {
@@ -1301,7 +1314,9 @@ footer ul li .footer_links:hover {
   font: 14px/179% "Ubuntu";
   font-weight: 400;
   margin-bottom: 28px;
-  text-align: left;
+  background: linear-gradient(90.26deg, #47C2FF 0.21%, rgba(99, 203, 254, 0.65) 97.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section_feedback .d_flex_feedback {
   display: flex;
