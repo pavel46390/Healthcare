@@ -1,3 +1,9 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content
+  }
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -5,30 +11,31 @@
   padding-left: 15px;
   margin: 0 auto;
 }
+
 header {
   padding: 14px 0;
-  background: rgba(188, 221, 248, 0.3);
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
-  left:0;
+  left: 0;
   z-index: 10;
-  &:before{
+
+  &:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(188, 221, 248, 0.3);
-  }
-  .header_body{
-    position: relative;
+    background: rgb(235, 246, 255, 1);
     z-index: 2;
-
   }
+
 
   a {
+    flex: 0 0 60px;
+    display: inline-block;
+    z-index: 3;
     text-decoration: none;
 
     h1 {
@@ -40,22 +47,33 @@ header {
 
     }
   }
-  .d_flex_header{
+
+  .d_flex_header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
 }
+
 
 nav {
   ul {
     list-style: none;
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+    @include max-screen(950px) {
+      display: inline-block;
+    }
 
     li {
       margin-left: 50px;
+      @include max-screen(950px) {
+
+      }
 
       &:last-of-type {
         margin-left: 75px;
@@ -103,3 +121,99 @@ nav {
     }
   }
 }
+
+@include max-screen(950px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header_burger {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+
+  }
+  .header_burger span {
+    position: absolute;
+    background-color: #40A3F8;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger:before,
+  .header_burger:after {
+    content: '';
+    background-color: #40A3F8;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+
+  }
+  .header_burger:before {
+    top: 0;
+  }
+  .header_burger:after {
+    bottom: 0;
+  }
+  .header_menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00bdea;
+    padding: 100px 0 0 0;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+
+
+  }
+  .header_menu.active {
+    top: 0;
+  }
+  .header_burger.active span {
+    transform: scale(0);
+  }
+  .header_burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+
+  }
+  .header_burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
+
+///*ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
+
+@include max-screen(950px) {
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

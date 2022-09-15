@@ -63,11 +63,6 @@
   border: 0;
 }
 
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
 body,
 h1,
 h2,
@@ -102,8 +97,7 @@ body {
 
 header {
   padding: 14px 0;
-  background: rgba(188, 221, 248, 0.3);
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -116,13 +110,13 @@ header:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(188, 221, 248, 0.3);
-}
-header .header_body {
-  position: relative;
+  background: rgb(235, 246, 255);
   z-index: 2;
 }
 header a {
+  flex: 0 0 60px;
+  display: inline-block;
+  z-index: 3;
   text-decoration: none;
 }
 header a h1 {
@@ -132,6 +126,7 @@ header a h1 {
   color: #40A3F8;
 }
 header .d_flex_header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,7 +136,13 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 950px) {
+  nav ul {
+    display: inline-block;
+  }
 }
 nav ul li {
   margin-left: 50px;
@@ -181,6 +182,68 @@ nav ul li a:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 950px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header_burger {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header_burger span {
+    position: absolute;
+    background-color: #40A3F8;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger:before,
+.header_burger:after {
+    content: "";
+    background-color: #40A3F8;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger:before {
+    top: 0;
+  }
+  .header_burger:after {
+    bottom: 0;
+  }
+  .header_menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00bdea;
+    padding: 100px 0 0 0;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header_menu.active {
+    top: 0;
+  }
+  .header_burger.active span {
+    transform: scale(0);
+  }
+  .header_burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
 .btn {
   display: inline-block;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -439,6 +502,60 @@ footer ul li .footer_links:hover {
   .d_flex_copyright {
     flex-wrap: wrap;
   }
+}
+
+#button {
+  display: inline-block;
+  background-color: #40A3F8;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+@media screen and (max-width: 950px) {
+  #button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#button::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f077";
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+@media screen and (max-width: 950px) {
+  #button::after {
+    top: 20%;
+    left: 20%;
+    font-size: 25px;
+  }
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #0069d9;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .section_main {
@@ -1590,6 +1707,60 @@ footer ul li .footer_links:hover {
   .d_flex_copyright {
     flex-wrap: wrap;
   }
+}
+
+#button {
+  display: inline-block;
+  background-color: #40A3F8;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+@media screen and (max-width: 950px) {
+  #button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#button::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f077";
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+@media screen and (max-width: 950px) {
+  #button::after {
+    top: 20%;
+    left: 20%;
+    font-size: 25px;
+  }
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #0069d9;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=main.css.map */
