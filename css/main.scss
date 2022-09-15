@@ -943,13 +943,13 @@ body {
         border-radius: 5px;
         padding: 7px 11px;
         display: block;
-
+        &:hover {
+          color: white;
+          background-color: #40A3F8;
+        }
       }
 
-      &:hover {
-        color: white;
-        background-color: #40A3F8;
-      }
+
 
     }
 
@@ -984,14 +984,14 @@ body {
         border-radius: 5px;
         padding: 7px 11px;
         display: block;
-
+        &:hover {
+          color: white;
+          background-color: #40A3F8;
+        }
 
       }
 
-      &:hover {
-        color: white;
-        background-color: #40A3F8;
-      }
+
     }
   }
 

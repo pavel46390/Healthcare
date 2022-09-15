@@ -216,7 +216,7 @@ nav ul li a:hover {
     width: 100%;
     height: 2px;
     top: 9px;
-    transition: all 0.3s ease 0s;
+    transition: all 0.4s ease 0s;
   }
   .header_burger:before,
 .header_burger:after {
@@ -226,7 +226,7 @@ nav ul li a:hover {
     width: 100%;
     height: 2px;
     left: 0;
-    transition: all 0.3s ease 0s;
+    transition: all 0.4s ease 0s;
   }
   .header_burger:before {
     top: 0;
@@ -242,7 +242,7 @@ nav ul li a:hover {
     height: 100%;
     background-color: rgb(235, 246, 255);
     padding: 100px 0 0 0;
-    transition: all 0.3s ease 0s;
+    transition: all 0.6s ease 0s;
     overflow: auto;
   }
   .header_menu.active {
@@ -1367,7 +1367,7 @@ footer ul li .footer_links:hover {
   padding: 7px 11px;
   display: block;
 }
-.section_feedback .owl-nav .owl-prev:hover {
+.section_feedback .owl-nav .owl-prev:before:hover {
   color: white;
   background-color: #40A3F8;
 }
@@ -1413,7 +1413,7 @@ footer ul li .footer_links:hover {
   padding: 7px 11px;
   display: block;
 }
-.section_feedback .owl-nav .owl-next:hover {
+.section_feedback .owl-nav .owl-next:before:hover {
   color: white;
   background-color: #40A3F8;
 }
