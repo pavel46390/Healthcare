@@ -942,8 +942,10 @@ body {
         background-color: #9AD0FF1B;
         border-radius: 5px;
         padding: 7px 11px;
-        display: block;
-        &:hover {
+        transition: 0.3s;
+      }
+      &:hover {
+        &:before {
           color: white;
           background-color: #40A3F8;
         }
@@ -983,13 +985,16 @@ body {
         background-color: #9AD0FF1B;
         border-radius: 5px;
         padding: 7px 11px;
-        display: block;
+        transition: 0.3s;
+      }
         &:hover {
-          color: white;
-          background-color: #40A3F8;
+          &:before {
+            color: white;
+            background-color: #40A3F8;
+          }
         }
 
-      }
+
 
 
     }

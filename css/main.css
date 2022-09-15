@@ -1365,9 +1365,9 @@ footer ul li .footer_links:hover {
   background-color: rgba(154, 208, 255, 0.1058823529);
   border-radius: 5px;
   padding: 7px 11px;
-  display: block;
+  transition: 0.3s;
 }
-.section_feedback .owl-nav .owl-prev:before:hover {
+.section_feedback .owl-nav .owl-prev:hover:before {
   color: white;
   background-color: #40A3F8;
 }
@@ -1411,9 +1411,9 @@ footer ul li .footer_links:hover {
   background-color: rgba(154, 208, 255, 0.1058823529);
   border-radius: 5px;
   padding: 7px 11px;
-  display: block;
+  transition: 0.3s;
 }
-.section_feedback .owl-nav .owl-next:before:hover {
+.section_feedback .owl-nav .owl-next:hover:before {
   color: white;
   background-color: #40A3F8;
 }
