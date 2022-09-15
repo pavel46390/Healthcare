@@ -28,6 +28,10 @@ footer {
     margin-right: 16px;
     text-decoration: none;
     display: inline-block;
+    transition: 0.3s;
+    &:hover{
+      opacity: 0.8;
+    }
 
   }
 
@@ -75,7 +79,11 @@ footer {
         font-size: 14px;
         line-height: 14px;
         color: #646464;
+        transition: 0.3s;
         text-decoration: none;
+        &:hover{
+          color: #40A3F8;
+        }
       }
     }
   }

@@ -46,10 +46,7 @@ nav {
 
       &:last-of-type {
         margin-left: 75px;
-        background: #40A3F8;
-        border-radius: 5px;
-        padding: 14px 28px;
-        transition: 0.2s;
+        transition: 0.3s;
         align-items: center;
 
         &:hover {
@@ -67,10 +64,12 @@ nav {
         text-decoration: none;
         opacity: 1;
         transition: 0.3s;
+        background: #40A3F8;
+        border-radius: 5px;
+        padding: 14px 28px;
 
         &:hover {
           color: white;
-          opacity: 1;
           text-decoration: none;
         }
 

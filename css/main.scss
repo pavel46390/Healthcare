@@ -50,7 +50,6 @@ body {
 }
 
 
-
 .section_main {
   background: linear-gradient(180deg, rgba(177, 222, 255, 0.3), rgba(255, 166, 237, 0) 100%);
   padding: 129px 0 0 0;
@@ -337,7 +336,7 @@ body {
     @include max-screen(800px) {
       max-width: 320px;
     }
-    @include max-screen(790px){
+    @include max-screen(790px) {
       margin: 0 auto;
     }
 
@@ -494,7 +493,7 @@ body {
       color: white;
       font-size: 15px;
       position: absolute;
-      top: 6px;
+      top: 10px;
       right: 15px;
     }
 
@@ -589,14 +588,18 @@ body {
 
 
   }
+
   .owl-item .service_item {
     cursor: pointer;
     margin: 6% 8%;
     transition: margin 0.4s ease;
   }
+
   .owl-item.center .service_item {
     cursor: auto;
     margin: 0;
+    min-height: 353px;
+    width: 320px;
   }
 
 
@@ -608,6 +611,7 @@ body {
 
 
   }
+
   .owl-item.active.center > div:after {
     content: '#';
     position: absolute;
@@ -616,6 +620,7 @@ body {
     right: 0;
 
   }
+
   .owl-item > div:after {
     color: transparent;
     height: 18px;
@@ -627,9 +632,6 @@ body {
   }
 
 }
-
-
-
 
 
 /*..................................................................................*/
@@ -724,6 +726,11 @@ body {
       justify-content: center;
 
       a {
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.8;
+        }
+
         &:not(:last-child) {
           margin-right: 12px;
 
@@ -740,6 +747,11 @@ body {
       object-fit: cover;
       object-position: top;
       display: block;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.9;
+      }
     }
 
   }
@@ -768,6 +780,14 @@ body {
       color: #FFFFFF;
       text-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
       text-decoration: none;
+      display: inline-block;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:hover {
+        color: #fff;
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
 
     }
   }
@@ -778,7 +798,6 @@ body {
 .section_mobile_app {
   padding: 120px 0 120px 0;
   background: rgba(177, 222, 255, 0.3);
-
 
 
   .block_mobile_app {
@@ -858,12 +877,12 @@ body {
   padding: 120px 0 120px 0;
   background: rgba(177, 222, 255, 0.3);
 
-.owl-dots{
-  margin-bottom: 190px;
-  margin-top: -191px;
-  position: relative;
-  z-index: 1;
-}
+  .owl-dots {
+    margin-bottom: 190px;
+    margin-top: -191px;
+    position: relative;
+    z-index: 1;
+  }
 
 
   h3 {
@@ -891,8 +910,12 @@ body {
     border-radius: 10px;
     max-width: 370px;
     margin: 90px 15px 0 15px;
-    min-height: 425px!important;
+    min-height: 425px !important;
 
+    a {
+      text-decoration: none;
+
+    }
 
     .img_absolute_feedback {
       position: absolute;
@@ -900,8 +923,6 @@ body {
       left: 80%;
       height: 40px !important;
       width: 40px !important;
-      border-radius: 100% !important;
-
     }
 
     h5 {
@@ -912,6 +933,11 @@ body {
       line-height: 55px;
       color: #3D3D3F;
       text-align: left;
+      transition: 0.3s;
+
+      &:hover{
+        color: #40A3F8;
+      }
     }
 
     p {
@@ -977,7 +1003,7 @@ body {
       @include max-screen(1275px) {
         left: -30px;
       }
-      @include max-screen(1200px){
+      @include max-screen(1200px) {
         display: none;
       }
       @include max-screen(800px) {
@@ -1019,7 +1045,7 @@ body {
       @include max-screen(1275px) {
         right: -30px;
       }
-      @include max-screen(1200px){
+      @include max-screen(1200px) {
         display: none;
       }
       @include max-screen(800px) {
@@ -1052,7 +1078,8 @@ body {
       }
     }
   }
-  .owl-carousel .owl-stage{
+
+  .owl-carousel .owl-stage {
     margin-bottom: 200px;
   }
 }
@@ -1065,7 +1092,6 @@ body {
   border-radius: 12px;
   background-position: center;
   position: relative;
-
 
 
   h4 {
@@ -1094,6 +1120,17 @@ body {
     text-decoration: none;
     text-align: left;
     border-radius: 5px;
+    transition: 0.3s;
+    border: transparent solid 1px;
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+      border-color: rgba(255, 255, 255, 0.5);
+
+
+
+    }
 
   }
 
@@ -1122,9 +1159,9 @@ body {
       margin-left: 15px;
     }
     @include max-screen(885px) {
-margin: 0 auto;
+      margin: 0 auto;
     }
-    @include max-screen(470px){
+    @include max-screen(470px) {
       margin: 0 10px 0 10px;
     }
   }
