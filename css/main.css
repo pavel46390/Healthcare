@@ -132,6 +132,7 @@ header a h1 {
   font-weight: 500;
   letter-spacing: 1px;
   color: #40A3F8;
+  display: inline-block;
 }
 header .d_flex_header {
   position: relative;
@@ -200,6 +201,7 @@ nav ul li a {
   opacity: 0.3;
   text-decoration: none;
   transition: 0.3s;
+  display: inline-block;
 }
 nav ul li a:hover {
   color: #40A3F8;
@@ -372,6 +374,7 @@ footer a h2, footer a .section_main .text_color, .section_main footer a .text_co
   font-weight: 500;
   letter-spacing: 1px;
   color: #40A3F8;
+  display: inline-block;
 }
 footer .footer_socials {
   margin-right: 16px;
@@ -419,6 +422,7 @@ footer ul li .footer_links {
   color: #646464;
   transition: 0.3s;
   text-decoration: none;
+  display: inline-block;
 }
 footer ul li .footer_links:hover {
   color: #40A3F8;
@@ -1211,6 +1215,7 @@ footer ul li .footer_links:hover {
   object-fit: cover;
   width: 583px;
   height: 524px;
+  display: inline-block;
 }
 @media screen and (max-width: 1000px) {
   .section_mobile_app .block_mobile_app img {
@@ -1530,6 +1535,7 @@ footer a h2, footer a .section_main .text_color, .section_main footer a .text_co
   font-weight: 500;
   letter-spacing: 1px;
   color: #40A3F8;
+  display: inline-block;
 }
 footer .footer_socials {
   margin-right: 16px;
@@ -1577,6 +1583,7 @@ footer ul li .footer_links {
   color: #646464;
   transition: 0.3s;
   text-decoration: none;
+  display: inline-block;
 }
 footer ul li .footer_links:hover {
   color: #40A3F8;
