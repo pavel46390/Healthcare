@@ -8,18 +8,24 @@ footer {
   background-color: white;
   padding: 34px 0 0 0;
 
-  h2 {
-  }
-
   .logo {
-    font: 32px/147% 'Rubik';
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #40A3F8;
     margin-bottom: 12px;
     text-decoration: none;
     display: inline-block;
+
   }
+  a{
+    h2 {
+      font: 32px/147% 'Rubik';
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #40A3F8;
+
+    }
+  }
+
+
+
 
   .footer_socials {
     margin-right: 16px;
@@ -34,6 +40,7 @@ footer {
 
   a {
     text-decoration: none;
+
   }
 
   p {
