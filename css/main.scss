@@ -85,11 +85,9 @@ body {
   }
 
   h2 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 48px/146% 'Roboto';
     font-weight: 700;
     font-size: 48px;
-    line-height: 70px;
     color: #3E3E3E;
     margin-bottom: 31px;
     text-align: left;
@@ -98,11 +96,8 @@ body {
   }
 
   p {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 14px/214% 'Roboto';
     font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
     color: rgba(117, 117, 117, 0.46);
     margin-bottom: 50px;
     max-width: 460px;
@@ -150,10 +145,8 @@ body {
     border-radius: 8px;
     padding: 18px 30px;
     border: transparent;
-    font-family: 'Poppins';
+    font: 14px/171% 'Poppins';
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
     color: #3D3D3F;
     margin-right: 19px;
     @include max-screen(595px) {
@@ -184,11 +177,9 @@ body {
     background: rgba(245, 246, 250, 0.52);
     border: transparent;
     margin-right: 31px;
-    font-family: 'Poppins';
+    font: 14px/171% 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
     color: #3D3D3F;
     cursor: pointer;
 
@@ -211,13 +202,13 @@ body {
     }
   }
 
-  .castom-input {
+  .custom-input {
     position: relative;
 
     &:before {
       content: '';
       position: absolute;
-      top: 0;
+      top: -5px;
       bottom: 0;
       right: 90%;
       margin: auto 3px auto 0;
@@ -281,10 +272,8 @@ body {
   }
 
   input::placeholder {
-    font-family: 'Poppins';
+    font: 14px/171% 'Poppins';
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
     color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -296,11 +285,8 @@ body {
   padding: 75px 0 200px 0;
 
   h3 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 42px/167% 'Roboto';
     font-weight: 500;
-    font-size: 42px;
-    line-height: 70px;
     color: #3E3E3E;
     margin: 0 auto 50px;
     text-align: center;
@@ -308,11 +294,9 @@ body {
   }
 
   h4 {
-    font-family: 'Roboto';
+    font: 20px/160% 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
     color: #3D3D3F;
     text-align: center;
 
@@ -320,11 +304,8 @@ body {
   }
 
   p {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 12px/167% 'Roboto';
     font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
 
@@ -429,11 +410,8 @@ body {
   }
 
   h3 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 42px/116% 'Roboto';
     font-weight: 500;
-    font-size: 42px;
-    line-height: 49px;
     letter-spacing: 0.02em;
     color: #3D3D3F;
     text-align: left;
@@ -441,11 +419,8 @@ body {
   }
 
   p {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 18px/167% 'Roboto';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
     letter-spacing: 0.02em;
     text-align: left;
     color: rgba(61, 61, 63, 0.7);
@@ -454,11 +429,8 @@ body {
   ul {
 
     li {
-      font-family: 'Roboto';
-      font-style: normal;
+      font: 16px/187% 'Roboto';
       font-weight: 400;
-      font-size: 16px;
-      line-height: 30px;
       letter-spacing: 0.02em;
       color: #3D3D3F;
       list-style-image: url("../images/check_mark.svg");
@@ -477,11 +449,8 @@ body {
     background-color: #40A3F8;
     border-radius: 5px;
     text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 16px/187% 'Roboto';
     font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     position: relative;
@@ -515,11 +484,8 @@ body {
   background: rgba(177, 222, 255, 0.3);
 
   h3 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 42px/117% 'Roboto';
     font-weight: 500;
-    font-size: 42px;
-    line-height: 49px;
     letter-spacing: 0.02em;
     color: #3D3D3F;
     margin-bottom: 24px;
@@ -527,33 +493,23 @@ body {
   }
 
   h4 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 18px/167% 'Roboto';
     font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
     text-align: center;
     color: #3D3D3F;
     margin: 19px 0 23px 0;
   }
 
   p {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 14px/157% 'Roboto';
     font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
     text-align: center;
     color: #999999;
   }
 
   .service_text {
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 18px/167% 'Roboto';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
     text-align: center;
     letter-spacing: 0.02em;
     color: rgba(61, 61, 63, 0.7);
@@ -641,11 +597,8 @@ body {
 
 
   h3 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 42px/117% 'Roboto';
     font-weight: 500;
-    font-size: 42px;
-    line-height: 49px;
     letter-spacing: 0.02em;
     color: #3D3D3F;
     text-align: center;
@@ -653,16 +606,12 @@ body {
   }
 
   p {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 18px/167% 'Roboto';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
     text-align: center;
     letter-spacing: 0.02em;
     color: rgba(61, 61, 63, 0.7);
     max-width: 500px;
-    text-align: center;
     margin: 16px auto 70px auto;
   }
 
@@ -698,21 +647,15 @@ body {
 
 
     h4 {
-      font-family: 'Roboto';
-      font-style: normal;
+      font: 18px/167% 'Roboto';
       font-weight: 500;
-      font-size: 18px;
-      line-height: 30px;
       text-align: center;
       color: #3D3D3F;
     }
 
     p {
-      font-family: 'Roboto';
-      font-style: normal;
+      font: 14px/157% 'Roboto';
       font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
       text-align: center;
       color: #999999;
       margin: 1px auto 17px auto;
@@ -771,14 +714,11 @@ body {
       background-color: #40A3F8;
       border-radius: 5px;
       padding: 9px 21px;
-      font-family: 'Roboto';
-      font-style: normal;
+      font: 18px/167% 'Roboto';
       font-weight: 400;
-      font-size: 18px;
-      line-height: 30px;
       text-align: center;
       color: #FFFFFF;
-      text-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+      text-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
       text-decoration: none;
       display: inline-block;
       transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -834,22 +774,16 @@ body {
 
 
   h3 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 42px/143% 'Roboto';
     font-weight: 500;
-    font-size: 42px;
-    line-height: 60px;
     letter-spacing: 0.02em;
     color: #3D3D3F;
     margin-bottom: 30px;
   }
 
   p {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 18px/167% 'Roboto';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
     letter-spacing: 0.02em;
     color: rgba(61, 61, 63, 0.7);
     margin-bottom: 30px;
@@ -886,11 +820,8 @@ body {
 
 
   h3 {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 42px/117% 'Roboto';
     font-weight: 500;
-    font-size: 42px;
-    line-height: 49px;
     letter-spacing: 0.02em;
     color: #3D3D3F;
     text-align: center;
@@ -926,11 +857,8 @@ body {
     }
 
     h5 {
-      font-family: 'Roboto';
-      font-style: normal;
+      font: 20px/275% 'Roboto';
       font-weight: 700;
-      font-size: 20px;
-      line-height: 55px;
       color: #3D3D3F;
       text-align: left;
       transition: 0.3s;
@@ -941,20 +869,14 @@ body {
     }
 
     p {
-      font-family: 'Roboto';
-      font-style: normal;
+      font: 16px/156% 'Roboto';
       font-weight: 400;
-      font-size: 16px;
-      line-height: 25px;
       color: #454D5D;
       text-align: left;
 
       &:first-of-type {
-        font-family: 'Ubuntu';
-        font-style: normal;
+        font: 14px/179% 'Ubuntu';
         font-weight: 400;
-        font-size: 14px;
-        line-height: 25px;
         margin-bottom: 28px;
         text-align: left;
       }
@@ -1095,7 +1017,7 @@ body {
 
 
   h4 {
-    font-family: 'Roboto';
+    font: 40px/117% 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1107,11 +1029,8 @@ body {
   }
 
   a {
-    font-family: 'Roboto';
-    font-style: normal;
+    font: 18px/117% 'Roboto';
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     display: inline-flex;
     font-feature-settings: 'cpsp' on;
     color: #40A3F8;

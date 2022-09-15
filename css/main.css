@@ -105,11 +105,8 @@ header {
   background: rgba(177, 222, 255, 0.3);
 }
 header h2 a, header .section_main .text_color a, .section_main header .text_color a {
-  font-family: "Rubik";
-  font-style: normal;
+  font: 32px/147% "Rubik";
   font-weight: 500;
-  font-size: 32px;
-  line-height: 47px;
   text-decoration: none;
   letter-spacing: 1px;
   color: #40A3F8;
@@ -138,11 +135,8 @@ nav ul li:last-of-type:hover {
   transform: scale(1.05);
 }
 nav ul li:last-of-type a {
-  font-family: "Poppins";
-  font-style: normal;
+  font: 15px/146% "Poppins";
   font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
   color: #FFFFFF;
   text-decoration: none;
   opacity: 1;
@@ -155,11 +149,8 @@ nav ul li:last-of-type a:hover {
   color: white;
 }
 nav ul li a {
-  font-family: "Poppins";
-  font-style: normal;
+  font: 16px/150% "Poppins";
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
   color: #6E5F5F;
   opacity: 0.3;
   text-decoration: none;
@@ -211,11 +202,8 @@ footer {
   padding: 34px 0 0 0;
 }
 footer .logo {
-  font-family: "Rubik";
-  font-style: normal;
+  font: 32px/147% "Rubik";
   font-weight: 500;
-  font-size: 32px;
-  line-height: 47px;
   letter-spacing: 1px;
   color: #40A3F8;
   margin-bottom: 12px;
@@ -235,11 +223,8 @@ footer a {
   text-decoration: none;
 }
 footer p {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/180% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 180%;
   color: #646464;
   margin-bottom: 16px;
 }
@@ -261,19 +246,13 @@ footer ul li {
   margin-bottom: 24px;
 }
 footer ul li:first-of-type {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 16px/100% "Roboto";
   font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
   color: #323232;
 }
 footer ul li .footer_links {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/100% "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
   color: #646464;
   transition: 0.3s;
   text-decoration: none;
@@ -319,20 +298,14 @@ footer ul li .footer_links:hover {
   }
 }
 .footer_subscribe p {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/180% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 180%;
   color: #646464;
   margin-bottom: 15px;
 }
 .footer_subscribe p:first-of-type {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 16px/100% "DM Sans";
   font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
   color: #323232;
   margin-bottom: 19px;
 }
@@ -345,18 +318,13 @@ footer ul li .footer_links:hover {
   background: #FFFFFF;
   border: 1.1px solid #E1E2E4;
   border-radius: 5px;
-  font-family: "Poppins";
+  font: 14px/114% "Poppins";
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
   color: #3D3D3F;
 }
 .footer_subscribe form input::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/114% "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
   color: rgba(117, 117, 117, 0.65);
 }
 .footer_subscribe form button {
@@ -365,11 +333,8 @@ footer ul li .footer_links:hover {
   border-radius: 5px;
   width: 292px;
   height: 40px;
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/114% "Roboto";
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-top: 12px;
@@ -384,11 +349,8 @@ footer ul li .footer_links:hover {
   background: rgba(177, 222, 255, 0.3);
 }
 .footer_copyright p {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/100% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
   color: #646464;
   margin-bottom: 0;
   min-width: 250px;
@@ -437,12 +399,13 @@ footer ul li .footer_links:hover {
   }
 }
 .footer_copyright li a {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/100% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
   color: #646464;
+  transition: 0.3s;
+}
+.footer_copyright li a:hover {
+  color: #40A3F8;
 }
 
 .d_flex_copyright {
@@ -493,21 +456,16 @@ footer ul li .footer_links:hover {
   }
 }
 .section_main h2, .section_main .text_color {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 48px/146% "Roboto";
   font-weight: 700;
   font-size: 48px;
-  line-height: 70px;
   color: #3E3E3E;
   margin-bottom: 31px;
   text-align: left;
 }
 .section_main p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/214% "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
   color: rgba(117, 117, 117, 0.46);
   margin-bottom: 50px;
   max-width: 460px;
@@ -548,10 +506,8 @@ footer ul li .footer_links:hover {
   border-radius: 8px;
   padding: 18px 30px;
   border: transparent;
-  font-family: "Poppins";
+  font: 14px/171% "Poppins";
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
   color: #3D3D3F;
   margin-right: 19px;
 }
@@ -581,11 +537,9 @@ footer ul li .footer_links:hover {
   background: rgba(245, 246, 250, 0.52);
   border: transparent;
   margin-right: 31px;
-  font-family: "Poppins";
+  font: 14px/171% "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
   color: #3D3D3F;
   cursor: pointer;
 }
@@ -606,13 +560,13 @@ footer ul li .footer_links:hover {
   top: 11px;
   right: 17px;
 }
-.form .castom-input {
+.form .custom-input {
   position: relative;
 }
-.form .castom-input:before {
+.form .custom-input:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -5px;
   bottom: 0;
   right: 90%;
   margin: auto 3px auto 0;
@@ -622,11 +576,11 @@ footer ul li .footer_links:hover {
   background-size: cover;
 }
 @media screen and (max-width: 595px) {
-  .form .castom-input:before {
+  .form .custom-input:before {
     right: 88%;
   }
 }
-.form .castom-input input {
+.form .custom-input input {
   width: 100%;
   height: 25px;
 }
@@ -668,10 +622,8 @@ footer ul li .footer_links:hover {
   }
 }
 .form input::placeholder {
-  font-family: "Poppins";
+  font: 14px/171% "Poppins";
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -681,30 +633,22 @@ footer ul li .footer_links:hover {
   padding: 75px 0 200px 0;
 }
 .section_solution h3 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 42px/167% "Roboto";
   font-weight: 500;
-  font-size: 42px;
-  line-height: 70px;
   color: #3E3E3E;
   margin: 0 auto 50px;
   text-align: center;
 }
 .section_solution h4 {
-  font-family: "Roboto";
+  font: 20px/160% "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
   color: #3D3D3F;
   text-align: center;
 }
 .section_solution p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 12px/167% "Roboto";
   font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
@@ -804,31 +748,22 @@ footer ul li .footer_links:hover {
   }
 }
 .block_man h3 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 42px/116% "Roboto";
   font-weight: 500;
-  font-size: 42px;
-  line-height: 49px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
   text-align: left;
 }
 .block_man p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/167% "Roboto";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
   color: rgba(61, 61, 63, 0.7);
 }
 .block_man ul li {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 16px/187% "Roboto";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
   list-style-image: url("../images/check_mark.svg");
@@ -844,11 +779,8 @@ footer ul li .footer_links:hover {
   background-color: #40A3F8;
   border-radius: 5px;
   text-decoration: none;
-  font-family: "Roboto";
-  font-style: normal;
+  font: 16px/187% "Roboto";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   position: relative;
@@ -879,42 +811,29 @@ footer ul li .footer_links:hover {
   background: rgba(177, 222, 255, 0.3);
 }
 .service h3 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 42px/117% "Roboto";
   font-weight: 500;
-  font-size: 42px;
-  line-height: 49px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
   margin-bottom: 24px;
   text-align: center;
 }
 .service h4 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/167% "Roboto";
   font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
   text-align: center;
   color: #3D3D3F;
   margin: 19px 0 23px 0;
 }
 .service p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/157% "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
   text-align: center;
   color: #999999;
 }
 .service .service_text {
-  text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/167% "Roboto";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   text-align: center;
   letter-spacing: 0.02em;
   color: rgba(61, 61, 63, 0.7);
@@ -982,27 +901,20 @@ footer ul li .footer_links:hover {
   background: rgba(177, 222, 255, 0.3);
 }
 .section_doctors h3 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 42px/117% "Roboto";
   font-weight: 500;
-  font-size: 42px;
-  line-height: 49px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
   text-align: center;
   margin-bottom: 16px;
 }
 .section_doctors p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/167% "Roboto";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   text-align: center;
   letter-spacing: 0.02em;
   color: rgba(61, 61, 63, 0.7);
   max-width: 500px;
-  text-align: center;
   margin: 16px auto 70px auto;
 }
 .section_doctors .line {
@@ -1035,20 +947,14 @@ footer ul li .footer_links:hover {
   }
 }
 .section_doctors .doctor_item h4 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/167% "Roboto";
   font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
   text-align: center;
   color: #3D3D3F;
 }
 .section_doctors .doctor_item p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/157% "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
   text-align: center;
   color: #999999;
   margin: 1px auto 17px auto;
@@ -1101,14 +1007,11 @@ footer ul li .footer_links:hover {
   background-color: #40A3F8;
   border-radius: 5px;
   padding: 9px 21px;
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/167% "Roboto";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   text-align: center;
   color: #FFFFFF;
-  text-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
   text-decoration: none;
   display: inline-block;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1157,21 +1060,15 @@ footer ul li .footer_links:hover {
   max-width: 500px;
 }
 .section_mobile_app h3 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 42px/143% "Roboto";
   font-weight: 500;
-  font-size: 42px;
-  line-height: 60px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
   margin-bottom: 30px;
 }
 .section_mobile_app p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/167% "Roboto";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   letter-spacing: 0.02em;
   color: rgba(61, 61, 63, 0.7);
   margin-bottom: 30px;
@@ -1200,11 +1097,8 @@ footer ul li .footer_links:hover {
   z-index: 1;
 }
 .section_feedback h3 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 42px/117% "Roboto";
   font-weight: 500;
-  font-size: 42px;
-  line-height: 49px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
   text-align: center;
@@ -1233,11 +1127,8 @@ footer ul li .footer_links:hover {
   width: 40px !important;
 }
 .section_feedback .feedback_item h5 {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 20px/275% "Roboto";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 55px;
   color: #3D3D3F;
   text-align: left;
   transition: 0.3s;
@@ -1246,20 +1137,14 @@ footer ul li .footer_links:hover {
   color: #40A3F8;
 }
 .section_feedback .feedback_item p {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 16px/156% "Roboto";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
   color: #454D5D;
   text-align: left;
 }
 .section_feedback .feedback_item p:first-of-type {
-  font-family: "Ubuntu";
-  font-style: normal;
+  font: 14px/179% "Ubuntu";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
   margin-bottom: 28px;
   text-align: left;
 }
@@ -1391,7 +1276,7 @@ footer ul li .footer_links:hover {
   position: relative;
 }
 .section_book h4 {
-  font-family: "Roboto";
+  font: 40px/117% "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -1402,11 +1287,8 @@ footer ul li .footer_links:hover {
   margin-bottom: 21px;
 }
 .section_book a {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 18px/117% "Roboto";
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
   display: inline-flex;
   font-feature-settings: "cpsp" on;
   color: #40A3F8;
@@ -1469,11 +1351,8 @@ footer {
   padding: 34px 0 0 0;
 }
 footer .logo {
-  font-family: "Rubik";
-  font-style: normal;
+  font: 32px/147% "Rubik";
   font-weight: 500;
-  font-size: 32px;
-  line-height: 47px;
   letter-spacing: 1px;
   color: #40A3F8;
   margin-bottom: 12px;
@@ -1493,11 +1372,8 @@ footer a {
   text-decoration: none;
 }
 footer p {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/180% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 180%;
   color: #646464;
   margin-bottom: 16px;
 }
@@ -1519,19 +1395,13 @@ footer ul li {
   margin-bottom: 24px;
 }
 footer ul li:first-of-type {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 16px/100% "Roboto";
   font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
   color: #323232;
 }
 footer ul li .footer_links {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/100% "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
   color: #646464;
   transition: 0.3s;
   text-decoration: none;
@@ -1577,20 +1447,14 @@ footer ul li .footer_links:hover {
   }
 }
 .footer_subscribe p {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/180% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 180%;
   color: #646464;
   margin-bottom: 15px;
 }
 .footer_subscribe p:first-of-type {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 16px/100% "DM Sans";
   font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
   color: #323232;
   margin-bottom: 19px;
 }
@@ -1603,18 +1467,13 @@ footer ul li .footer_links:hover {
   background: #FFFFFF;
   border: 1.1px solid #E1E2E4;
   border-radius: 5px;
-  font-family: "Poppins";
+  font: 14px/114% "Poppins";
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
   color: #3D3D3F;
 }
 .footer_subscribe form input::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/114% "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
   color: rgba(117, 117, 117, 0.65);
 }
 .footer_subscribe form button {
@@ -1623,11 +1482,8 @@ footer ul li .footer_links:hover {
   border-radius: 5px;
   width: 292px;
   height: 40px;
-  font-family: "Roboto";
-  font-style: normal;
+  font: 14px/114% "Roboto";
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-top: 12px;
@@ -1642,11 +1498,8 @@ footer ul li .footer_links:hover {
   background: rgba(177, 222, 255, 0.3);
 }
 .footer_copyright p {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/100% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
   color: #646464;
   margin-bottom: 0;
   min-width: 250px;
@@ -1695,12 +1548,13 @@ footer ul li .footer_links:hover {
   }
 }
 .footer_copyright li a {
-  font-family: "DM Sans";
-  font-style: normal;
+  font: 14px/100% "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
   color: #646464;
+  transition: 0.3s;
+}
+.footer_copyright li a:hover {
+  color: #40A3F8;
 }
 
 .d_flex_copyright {

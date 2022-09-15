@@ -11,11 +11,8 @@ header {
 
   h2 {
     a {
-      font-family: 'Rubik';
-      font-style: normal;
+      font: 32px/147% 'Rubik';
       font-weight: 500;
-      font-size: 32px;
-      line-height: 47px;
       text-decoration: none;
       letter-spacing: 1px;
       color: #40A3F8;
@@ -51,11 +48,8 @@ nav {
       }
 
       &:last-of-type a {
-        font-family: 'Poppins';
-        font-style: normal;
+        font: 15px/146% 'Poppins';
         font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
         color: #FFFFFF;
         text-decoration: none;
         opacity: 1;
@@ -71,11 +65,8 @@ nav {
       }
 
       a {
-        font-family: 'Poppins';
-        font-style: normal;
+        font: 16px/150% 'Poppins';
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
         color: #6E5F5F;
         opacity: 0.3;
         text-decoration: none;
