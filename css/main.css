@@ -113,10 +113,6 @@ header h2 a, header .section_main .text_color a, .section_main header .text_colo
   text-decoration: none;
   letter-spacing: 1px;
   color: #40A3F8;
-  transition: 0.3s;
-}
-header h2 a:hover, header .section_main .text_color a:hover, .section_main header .text_color a:hover {
-  text-decoration: none;
 }
 header .d_flex_header {
   display: flex;
@@ -157,7 +153,6 @@ nav ul li:last-of-type a {
 }
 nav ul li:last-of-type a:hover {
   color: white;
-  text-decoration: none;
 }
 nav ul li a {
   font-family: "Poppins";
@@ -168,11 +163,11 @@ nav ul li a {
   color: #6E5F5F;
   opacity: 0.3;
   text-decoration: none;
+  transition: 0.3s;
 }
 nav ul li a:hover {
   color: #40A3F8;
   opacity: 1;
-  text-decoration: none;
 }
 
 .btn {
@@ -606,7 +601,7 @@ footer ul li .footer_links:hover {
   }
 }
 .form .select option {
-  content: url("../images/find.svg");
+  content: url("../images/magnifying_glass.svg");
   position: absolute;
   top: 11px;
   right: 17px;
@@ -655,7 +650,7 @@ footer ul li .footer_links:hover {
   }
 }
 .form button:before {
-  content: url("../images/find.svg");
+  content: url("../images/magnifying_glass.svg");
   position: absolute;
   top: 12px;
   right: 18px;
@@ -836,7 +831,7 @@ footer ul li .footer_links:hover {
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #3D3D3F;
-  list-style-image: url("../images/Vector.svg");
+  list-style-image: url("../images/check_mark.svg");
   list-style-position: inside;
   margin-bottom: 14px;
   margin-top: 10px;
@@ -1388,7 +1383,7 @@ footer ul li .footer_links:hover {
 
 .section_book {
   padding: 82px 0 92px 0;
-  background-image: url("../images/Group 1879background_book.jpg");
+  background-image: url("../images/background_book.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;

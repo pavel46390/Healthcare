@@ -6,8 +6,8 @@ $(document).ready(function(){
         center:true,
         nav:true,
         autoplay:true,
-        autoplayTimeout:3000,
-        autoplaySpeed: 1000,
+        autoplayTimeout:4000,
+        autoplaySpeed: 2000,
         navText: [ '', ' ' ],
 
         responsive:{

@@ -202,7 +202,7 @@ body {
     }
 
     option {
-      content: url("../images/find.svg");
+      content: url("../images/magnifying_glass.svg");
       position: absolute;
       top: 11px;
       right: 17px;
@@ -258,7 +258,7 @@ body {
 
 
     &:before {
-      content: url("../images/find.svg");
+      content: url("../images/magnifying_glass.svg");
       position: absolute;
       top: 12px;
       right: 18px;
@@ -461,7 +461,7 @@ body {
       line-height: 30px;
       letter-spacing: 0.02em;
       color: #3D3D3F;
-      list-style-image: url("../images/Vector.svg");
+      list-style-image: url("../images/check_mark.svg");
       list-style-position: inside;
       margin-bottom: 14px;
       margin-top: 10px;
@@ -1086,7 +1086,7 @@ body {
 
 .section_book {
   padding: 82px 0 92px 0;
-  background-image: url("../images/Group 1879background_book.jpg");
+  background-image: url("../images/background_book.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
