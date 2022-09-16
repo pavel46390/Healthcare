@@ -14,7 +14,8 @@ footer {
     display: inline-block;
 
   }
-  a{
+
+  a {
     h2 {
       font: 32px/147% 'Rubik';
       font-weight: 500;
@@ -25,8 +26,6 @@ footer {
   }
 
 
-
-
   .footer_socials {
     margin-right: 16px;
     text-decoration: none;
@@ -34,7 +33,8 @@ footer {
     transition: 0.3s;
     width: 32px;
     height: 32px;
-    &:hover{
+
+    &:hover {
       opacity: 0.8;
     }
 
@@ -79,7 +79,8 @@ footer {
         transition: 0.3s;
         text-decoration: none;
         display: inline-block;
-        &:hover{
+
+        &:hover {
           color: #40A3F8;
         }
       }
@@ -217,10 +218,10 @@ footer {
       margin: 0 53px 0 53px;
 
     }
-    @include max-screen(490px){
+    @include max-screen(490px) {
       margin: 0 20px 0 20px;
     }
-    @include max-screen(428px){
+    @include max-screen(428px) {
       margin: 0 10px 0 10px;
     }
 
@@ -229,7 +230,8 @@ footer {
       font-weight: 400;
       color: #646464;
       transition: 0.3s;
-      &:hover{
+
+      &:hover {
         color: #40A3F8;
       }
 

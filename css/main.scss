@@ -31,16 +31,16 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1;
 }
-
-
-@import "header";
-@import "other";
+//.............................................................................................
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content
   }
 }
+
+@import "header";
+@import "other";
 
 
 .section_main {
@@ -271,7 +271,7 @@ body {
   }
 }
 
-/*..................................................................................*/
+//.............................................................................................
 
 .section_solution {
   background: rgba(177, 222, 255, 0.3);
@@ -307,10 +307,12 @@ body {
   .solution_item {
     margin: 0 30px;
     text-align: center;
-    img{
+
+    img {
       width: 80px;
       height: 80px;
     }
+
     @include max-screen(800px) {
       max-width: 320px;
     }
@@ -337,7 +339,7 @@ body {
 
 }
 
-/*..................................................................................*/
+//.............................................................................................
 
 .owl-item {
   display: flex;
@@ -367,7 +369,8 @@ body {
   background-color: #DBE8EE;
   margin: 0 5px;
   transition: 0.5s;
-  &:hover{
+
+  &:hover {
     background-color: #40A3F8;
   }
 
@@ -381,9 +384,7 @@ body {
 
 }
 
-
-/*..................................................................................*/
-
+//.............................................................................................
 
 .block_man {
   display: flex;
@@ -480,7 +481,7 @@ body {
   }
 }
 
-/*..................................................................................*/
+//.............................................................................................
 
 .service {
   background: rgba(177, 222, 255, 0.3);
@@ -544,16 +545,15 @@ body {
       max-width: 349px;
       min-width: 0;
     }
-    @include max-screen(999px){
+    @include max-screen(999px) {
       min-width: 349px;
 
     }
-    @include max-screen(400px){
+    @include max-screen(400px) {
       min-width: 0;
       min-height: 0;
       height: 100%;
     }
-
 
 
   }
@@ -569,13 +569,12 @@ body {
     margin: 0;
     height: 316px;
     width: 349px;
-    @include max-screen(400px){
+    @include max-screen(400px) {
       min-width: 0;
       min-height: 0;
       height: 100%;
     }
   }
-
 
 
   .owl-item.center .service_item {
@@ -611,7 +610,8 @@ body {
 }
 
 
-/*..................................................................................*/
+//.............................................................................................
+
 .section_doctors {
   padding: 120px 0 0 0;
   background: rgba(177, 222, 255, 0.3);
@@ -691,6 +691,7 @@ body {
 
       a {
         transition: 0.3s;
+
         &:hover {
           opacity: 0.8;
         }
@@ -699,7 +700,8 @@ body {
           margin-right: 12px;
 
         }
-        img{
+
+        img {
           height: 31px;
           width: 31px;
         }
@@ -758,8 +760,8 @@ body {
   }
 }
 
+//.............................................................................................
 
-/*..................................................................................*/
 .section_mobile_app {
   padding: 120px 0 120px 0;
   background: rgba(177, 222, 255, 0.3);
@@ -833,7 +835,8 @@ body {
   }
 }
 
-/*.............................................................................................*/
+//.............................................................................................
+
 .section_feedback {
   padding: 120px 0 120px 0;
   background: rgba(177, 222, 255, 0.3);
@@ -891,7 +894,7 @@ body {
       text-align: left;
       transition: 0.3s;
 
-      &:hover{
+      &:hover {
         color: #40A3F8;
       }
     }
@@ -980,13 +983,13 @@ body {
         padding: 7px 11px;
         transition: 0.3s;
       }
+
       &:hover {
         &:before {
           color: white;
           background-color: #40A3F8;
         }
       }
-
 
 
     }
@@ -1023,14 +1026,13 @@ body {
         padding: 7px 11px;
         transition: 0.3s;
       }
-        &:hover {
-          &:before {
-            color: white;
-            background-color: #40A3F8;
-          }
+
+      &:hover {
+        &:before {
+          color: white;
+          background-color: #40A3F8;
         }
-
-
+      }
 
 
     }
@@ -1040,6 +1042,8 @@ body {
     margin-bottom: 200px;
   }
 }
+
+//.............................................................................................
 
 .section_book {
   padding: 82px 0 92px 0;
@@ -1081,7 +1085,6 @@ body {
       background-color: transparent;
       color: white;
       border-color: rgba(255, 255, 255, 0.5);
-
 
 
     }

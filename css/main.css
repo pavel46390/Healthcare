@@ -568,7 +568,6 @@ nav ul li a:hover {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*..................................................................................*/
 .section_solution {
   background: rgba(177, 222, 255, 0.3);
   padding: 75px 0 200px 0;
@@ -627,7 +626,6 @@ nav ul li a:hover {
   }
 }
 
-/*..................................................................................*/
 .owl-item {
   display: flex;
   justify-content: center;
@@ -665,7 +663,6 @@ nav ul li a:hover {
   height: 15px;
 }
 
-/*..................................................................................*/
 .block_man {
   display: flex;
   justify-content: space-between;
@@ -755,7 +752,6 @@ nav ul li a:hover {
   }
 }
 
-/*..................................................................................*/
 .service {
   background: rgba(177, 222, 255, 0.3);
 }
@@ -865,7 +861,6 @@ nav ul li a:hover {
   border-bottom-right-radius: 10px;
 }
 
-/*..................................................................................*/
 .section_doctors {
   padding: 120px 0 0 0;
   background: rgba(177, 222, 255, 0.3);
@@ -996,7 +991,6 @@ nav ul li a:hover {
   border-color: #0062cc;
 }
 
-/*..................................................................................*/
 .section_mobile_app {
   padding: 120px 0 120px 0;
   background: rgba(177, 222, 255, 0.3);
@@ -1060,7 +1054,6 @@ nav ul li a:hover {
   margin-right: 13px;
 }
 
-/*.............................................................................................*/
 .section_feedback {
   padding: 120px 0 120px 0;
   background: rgba(177, 222, 255, 0.3);
