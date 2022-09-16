@@ -308,6 +308,10 @@ body {
   .solution_item {
     margin: 0 30px;
     text-align: center;
+    img{
+      width: 80px;
+      height: 80px;
+    }
     @include max-screen(800px) {
       max-width: 320px;
     }
@@ -346,8 +350,8 @@ body {
 
 .owl-carousel .owl-item img {
   display: inline-flex;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .owl-dots {
@@ -367,7 +371,6 @@ body {
   &:hover{
     background-color: #40A3F8;
   }
-
 
 }
 
@@ -536,11 +539,22 @@ body {
     border-radius: 10px;
     min-height: 316px;
     padding: 59px 62px 31px 63px;
-    max-width: 349px;
+    min-width: 349px;
 
-    @include max-screen(800px) {
-      max-width: 320px;
+    @include max-screen(1125px) {
+      max-width: 349px;
+      min-width: 0;
     }
+    @include max-screen(999px){
+      min-width: 349px;
+
+    }
+    @include max-screen(400px){
+      min-width: 0;
+      min-height: 0;
+      height: 100%;
+    }
+
 
 
   }
@@ -554,9 +568,15 @@ body {
   .owl-item.center .service_item {
     cursor: auto;
     margin: 0;
-    min-height: 353px;
-    width: 320px;
+    height: 316px;
+    width: 349px;
+    @include max-screen(400px){
+      min-width: 0;
+      min-height: 0;
+      height: 100%;
+    }
   }
+
 
 
   .owl-item.center .service_item {
@@ -677,6 +697,10 @@ body {
         &:not(:last-child) {
           margin-right: 12px;
 
+        }
+        img{
+          height: 31px;
+          width: 31px;
         }
       }
 

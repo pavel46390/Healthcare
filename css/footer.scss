@@ -32,6 +32,8 @@ footer {
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
+    width: 32px;
+    height: 32px;
     &:hover{
       opacity: 0.8;
     }
@@ -89,7 +91,7 @@ footer {
 .d_flex_footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: baseline;
   @include max-screen(1000px) {
     flex-wrap: wrap;
   }
