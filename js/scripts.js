@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 0,
@@ -50,3 +49,5 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: 0}, '300');
     });
 });
+
+
